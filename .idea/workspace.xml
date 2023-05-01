@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7390830-48ea-422b-a283-1062fb927651" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-j-8.0.33.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysqlSetup.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Course/CourseDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Course/CourseDaoInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Course/MySqlCourseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Course/MySqlCourseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/mySqlDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/mySqlDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DTO/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DTO/Course.java" afterDir="false" />
-    </list>
+    <list default="true" id="f7390830-48ea-422b-a283-1062fb927651" name="Changes" comment="FEATURES 1 - 8 for courses entity." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,8 +78,16 @@
       <workItem from="1681891917560" duration="1219000" />
       <workItem from="1681996926341" duration="599000" />
       <workItem from="1682666001868" duration="804000" />
-      <workItem from="1682931838121" duration="11662000" />
+      <workItem from="1682931838121" duration="12053000" />
     </task>
+    <task id="LOCAL-00001" summary="FEATURES 1 - 8 for courses entity.">
+      <created>1682958742244</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682958742244</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,5 +106,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="FEATURES 1 - 8 for courses entity." />
+    <option name="LAST_COMMIT_MESSAGE" value="FEATURES 1 - 8 for courses entity." />
   </component>
 </project>
