@@ -5,17 +5,15 @@ public class Course {
     private int COURSE_ID;
     private String COURSE_NAME;
     //to set level of course with help of an enum
-    private int COURSE_CREDITS;
+    private int INSTRUCTOR_ID;
     private int MAX_ENROLLMENT_NUMBER;
-    private int CURRENT_ENROLLMENT_NUMBER;
-    private int instructorId;
 
-    public Course(int COURSE_ID, String COURSE_NAME, int MAX_ENROLLMENT_NUMBER, int CURRENT_ENROLLMENT_NUMBER, int instructorId) {
+
+    public Course(int COURSE_ID, String COURSE_NAME, int INSTRUCTOR_ID, int MAX_ENROLLMENT_NUMBER) {
         this.COURSE_ID = COURSE_ID;
         this.COURSE_NAME = COURSE_NAME;
+        this.INSTRUCTOR_ID = INSTRUCTOR_ID;
         this.MAX_ENROLLMENT_NUMBER = MAX_ENROLLMENT_NUMBER;
-        this.CURRENT_ENROLLMENT_NUMBER = CURRENT_ENROLLMENT_NUMBER;
-        this.instructorId = instructorId;
     }
 
     public int getCOURSE_ID() {
@@ -42,24 +40,22 @@ public class Course {
         this.MAX_ENROLLMENT_NUMBER = MAX_ENROLLMENT_NUMBER;
     }
 
-    public int getCURRENT_ENROLLMENT_NUMBER() {
-        return CURRENT_ENROLLMENT_NUMBER;
+    public int getINSTRUCTOR_ID() {
+        return INSTRUCTOR_ID;
     }
 
-    public void setCURRENT_ENROLLMENT_NUMBER(int CURRENT_ENROLLMENT_NUMBER) {
-        this.CURRENT_ENROLLMENT_NUMBER = CURRENT_ENROLLMENT_NUMBER;
-    }
-
-    public int getInstructorId() {
-        return instructorId;
-    }
-
-    public void setInstructorId(int instructorId) {
-        this.instructorId = instructorId;
+    public void setINSTRUCTOR_ID(int INSTRUCTOR_ID) {
+        this.INSTRUCTOR_ID = INSTRUCTOR_ID;
     }
 
     @Override
     public String toString() {
-        return "Course{" + "COURSE_ID=" + COURSE_ID + ", COURSE_NAME=" + COURSE_NAME + ", MAX_ENROLLMENT_NUMBER=" + MAX_ENROLLMENT_NUMBER + ", CURRENT_ENROLLMENT_NUMBER=" + CURRENT_ENROLLMENT_NUMBER + ", instructorId=" + instructorId + '}';
+        return "Course{" +
+                "COURSE_ID=" + COURSE_ID +
+                ", COURSE_NAME='" + COURSE_NAME + '\'' +
+                ", INSTRUCTOR_ID=" + INSTRUCTOR_ID +
+                ", MAX_ENROLLMENT_NUMBER=" + MAX_ENROLLMENT_NUMBER +
+                '}';
     }
 }
+

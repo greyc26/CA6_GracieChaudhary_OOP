@@ -31,7 +31,7 @@ public class mySqlDAO {
             System.out.println("Connection failed " + e.getMessage());
             System.exit(2);
         }
-        System.out.println("Connection successful");
+        //System.out.println("Connection successful");
         return connection;
     }
 
