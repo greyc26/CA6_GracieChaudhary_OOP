@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7390830-48ea-422b-a283-1062fb927651" name="Changes" comment="FEATURES 1 - 8 for courses entity." />
+    <list default="true" id="f7390830-48ea-422b-a283-1062fb927651" name="Changes" comment="FEATURES 1 - 8 for courses entity.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Course/MySqlCourseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Course/MySqlCourseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/mySqlDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/mySqlDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DTO/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DTO/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/MainMenu.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +83,7 @@
       <workItem from="1681891917560" duration="1219000" />
       <workItem from="1681996926341" duration="599000" />
       <workItem from="1682666001868" duration="804000" />
-      <workItem from="1682931838121" duration="12389000" />
+      <workItem from="1682931838121" duration="12712000" />
     </task>
     <task id="LOCAL-00001" summary="FEATURES 1 - 8 for courses entity.">
       <created>1682958742244</created>
@@ -87,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682958742244</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="FEATURES 1 - 8 for courses entity.">
+      <created>1682959557499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682959557499</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

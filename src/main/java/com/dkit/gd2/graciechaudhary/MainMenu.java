@@ -12,13 +12,6 @@ public class MainMenu {
 
     private static Scanner keyboard = new Scanner(System.in);
 
-    //Feature 1 – Find all Entities e.g. findAllPlayers() to return a List of all the entities and display that list.
-    // Feature 2 – Find and Display (a single) Entity by Key e.g. findPlayerById( id ) – return a single entity and display its contents.
-    // Feature 3 – Delete an Entity by key e.g. deletePlayerById( id ) – remove entity from database
-    // Feature 4 – Insert an Entity in the database using DAO (gather data from user, store in DTO object, pass into method insertPlayer ( Player ), return new entity including assigned auto-id.
-    // Feature 5 – List entities using a filter e.g. findPlayerUsingFilter( playerAgeComparator )
-    // Feature 6 – Create a Cache using a HashSet that will maintain the ids of all players and refactor the findPlayerById() method so that
-    // it checks for the existence of a player id before it makes a query to the SQL database.
 
     public static void main(String[] args) {
         MySqlCourseDAO courseDao = new MySqlCourseDAO();
