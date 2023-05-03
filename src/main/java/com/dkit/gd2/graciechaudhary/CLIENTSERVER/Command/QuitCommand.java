@@ -5,17 +5,17 @@ import com.dkit.gd2.graciechaudhary.Enum.Colours;
 
 import java.util.Scanner;
 
-public class UnrecognizedCommand implements Command{
-
+public class QuitCommand implements Command{
 
     @Override
     public String generateResponse(String[] commandParts) {
-        return MultithreadedServerDetails.UNRECOGNIZED_COMMAND;
+
+        return Colours.MAGENTA_BOLD_BRIGHT+"Exiting..."+Colours.RESET;
     }
 
     @Override
     public String generateRequest(Scanner keyboard) {
-        return MultithreadedServerDetails.UNRECOGNIZED_COMMAND;
+        return MultithreadedServerDetails.CALL_QUIT;
     }
 
     @Override
@@ -23,4 +23,5 @@ public class UnrecognizedCommand implements Command{
         System.out.println(Colours.MAGENTA_BOLD_BRIGHT + "\nServer response:" + Colours.RESET);
         System.out.println(Colours.WHITE_BOLD_BRIGHT  + response + Colours.RESET);
     }
+
 }

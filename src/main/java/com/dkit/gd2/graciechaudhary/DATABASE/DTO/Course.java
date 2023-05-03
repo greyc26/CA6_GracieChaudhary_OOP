@@ -57,6 +57,10 @@ public class Course {
                 ", MAX_ENROLLMENT_NUMBER=" + MAX_ENROLLMENT_NUMBER +
                 '}';
     }
+
+    public void printCourse() {
+        System.out.printf("%-20s%-40s%-20s%-10s\n", COURSE_ID, COURSE_NAME, INSTRUCTOR_ID, MAX_ENROLLMENT_NUMBER);
+    }
 }
 
 //completed
