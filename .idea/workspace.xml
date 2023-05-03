@@ -4,11 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7390830-48ea-422b-a283-1062fb927651" name="Changes" comment="FEATURES 1 - 8 for courses entity.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Course/MySqlCourseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Course/MySqlCourseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/mySqlDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/mySqlDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DTO/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DTO/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/MainMenu.java" afterDir="false" />
+    <list default="true" id="f7390830-48ea-422b-a283-1062fb927651" name="Changes" comment="FEATURES for instructor entity.&#10;Colours played into role.&#10;Main Menu, Course Menu, Instructor Menu">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Command/CommadFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Command/UnrecognizedCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Command/addNewCourseCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Command/findAllCoursesCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Command/findCourseByEnrollmentCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Command/findCourseByIdCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Command/removeCourseCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Server/MultithreadedServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Server/QuitCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Server/ServerThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/Core/FileServiceProtocol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/Core/MultithreadedServerDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/Core/NetworkMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/Core/Utility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/Menus/InstructorMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/Menus/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Assignment/AssigmentDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Assignment/AssigmentDaoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Assignment/MySqlAssignmentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Assignment/MySqlAssignmentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Course/CourseDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Course/CourseDaoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Course/MySqlCourseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Course/MySqlCourseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Enrollment/EnrollmentDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Enrollment/EnrollmentDaoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Enrollment/MySqlEnrollmentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Enrollment/MySqlEnrollmentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Instructor/InstructorDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Instructor/InstructorDaoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Instructor/MySqlInstructorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Instructor/MySqlInstructorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Student/MySqlStudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Student/MySqlStudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Student/StudentDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Student/StudentDaoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Submission/MySqlSubmissionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Submission/MySqlSubmissionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/Submission/SubmissionDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Submission/SubmissionDaoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DAO/mySqlDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/mySqlDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DTO/Assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DTO/Assignment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DTO/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DTO/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DTO/Enrollment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DTO/Enrollment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DTO/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DTO/Instructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DTO/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DTO/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DTO/Submission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DTO/Submission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/Menus/CourseMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,29 +72,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/graci/OneDrive - Dundalk Institute of Technology/year2/oop/SEM 2/CA6_OOP_GracieChaudhary_GD2_2022_2023/lib",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/graci/OneDrive - Dundalk Institute of Technology/year2/oop/SEM 2/CA6_OOP_GracieChaudhary_GD2_2022_2023/lib&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\graci\OneDrive - Dundalk Institute of Technology\year2\oop\SEM 2\CA6_OOP_GracieChaudhary_GD2_2022_2023\lib" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="MainMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.dkit.gd2.graciechaudhary.MainMenu" />
+  <component name="RunManager" selected="Application.com.dkit.gd2.graciechaudhary.DATABASE.Menus.MainMenu">
+    <configuration name="CourseMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dkit.gd2.graciechaudhary.Menus.CourseMenu" />
       <module name="CA6_OOP_GracieChaudhary_GD2_2022_2023" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dkit.gd2.graciechaudhary.*" />
+          <option name="PATTERN" value="com.dkit.gd2.graciechaudhary.Menus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dkit.gd2.graciechaudhary.Menus.MainMenu" />
+      <module name="CA6_OOP_GracieChaudhary_GD2_2022_2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dkit.gd2.graciechaudhary.Menus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.dkit.gd2.graciechaudhary.DATABASE.Menus.MainMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dkit.gd2.graciechaudhary.DATABASE.Menus.MainMenu" />
+      <module name="CA6_OOP_GracieChaudhary_GD2_2022_2023" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dkit.gd2.graciechaudhary.DATABASE.Menus.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,7 +130,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.dkit.gd2.graciechaudhary.DATABASE.Menus.MainMenu" />
         <item itemvalue="Application.MainMenu" />
+        <item itemvalue="Application.CourseMenu" />
       </list>
     </recent_temporary>
   </component>
@@ -83,7 +147,8 @@
       <workItem from="1681891917560" duration="1219000" />
       <workItem from="1681996926341" duration="599000" />
       <workItem from="1682666001868" duration="804000" />
-      <workItem from="1682931838121" duration="12712000" />
+      <workItem from="1682931838121" duration="14249000" />
+      <workItem from="1683040953655" duration="20511000" />
     </task>
     <task id="LOCAL-00001" summary="FEATURES 1 - 8 for courses entity.">
       <created>1682958742244</created>
@@ -119,6 +184,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="FEATURES 1 - 8 for courses entity." />
-    <option name="LAST_COMMIT_MESSAGE" value="FEATURES 1 - 8 for courses entity." />
+    <MESSAGE value="FEATURES for instructor entity.&#10;Colours played into role.&#10;Main Menu, Course Menu, Instructor Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEATURES for instructor entity.&#10;Colours played into role.&#10;Main Menu, Course Menu, Instructor Menu" />
   </component>
 </project>
