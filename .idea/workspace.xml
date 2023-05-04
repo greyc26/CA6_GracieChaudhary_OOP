@@ -4,37 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7390830-48ea-422b-a283-1062fb927651" name="Changes" comment="FEATURES for instructor entity.&#10;Colours played into role.&#10;Main Menu, Course Menu, Instructor Menu">
-      <change afterPath="$PROJECT_DIR$/diagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Command/Instructor/findAllInstructorCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Command/Instructor/findInstuctorByIDCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Command/ReturnCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/Menus/StudentMenu.java" afterDir="false" />
+    <list default="true" id="f7390830-48ea-422b-a283-1062fb927651" name="Changes" comment="FINISHED SERVER AND CLIENT&#10;STUDENT TABLE WORKING">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Client/Menus/CourseMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Client/Menus/CourseMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Client/Menus/InstructorMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Client/Menus/InstructorMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Command/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/CLIENTSERVER/Command/CommandFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/Core/MultithreadedServerDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/Core/MultithreadedServerDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/Core/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/Core/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Assignment/AssigmentDaoInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Assignment/MySqlAssignmentDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Course/CourseDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Course/CourseDaoInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Course/MySqlCourseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Course/MySqlCourseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Enrollment/EnrollmentDaoInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Enrollment/MySqlEnrollmentDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Student/MySqlStudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Student/MySqlStudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Student/StudentDaoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Student/StudentDaoInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Submission/MySqlSubmissionDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DAO/Submission/SubmissionDaoInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DTO/Assignment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DTO/Enrollment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DTO/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DTO/Instructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DTO/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DTO/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/DTO/Submission.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/Menus/CourseMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/Menus/CourseMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/Menus/InstructorMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/Menus/InstructorMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/Menus/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dkit/gd2/graciechaudhary/DATABASE/Menus/MainMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +142,7 @@
       <workItem from="1683040953655" duration="40999000" />
       <workItem from="1683154325727" duration="4274000" />
       <workItem from="1683158634697" duration="7530000" />
-      <workItem from="1683166204592" duration="2241000" />
+      <workItem from="1683166204592" duration="3058000" />
     </task>
     <task id="LOCAL-00001" summary="FEATURES 1 - 8 for courses entity.">
       <created>1682958742244</created>
@@ -186,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682959557499</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="FINISHED SERVER AND CLIENT&#10;STUDENT TABLE WORKING">
+      <created>1683170008587</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683170008587</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +186,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="FEATURES 1 - 8 for courses entity." />
     <MESSAGE value="FEATURES for instructor entity.&#10;Colours played into role.&#10;Main Menu, Course Menu, Instructor Menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="FEATURES for instructor entity.&#10;Colours played into role.&#10;Main Menu, Course Menu, Instructor Menu" />
+    <MESSAGE value="FINISHED SERVER AND CLIENT&#10;STUDENT TABLE WORKING" />
+    <option name="LAST_COMMIT_MESSAGE" value="FINISHED SERVER AND CLIENT&#10;STUDENT TABLE WORKING" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
