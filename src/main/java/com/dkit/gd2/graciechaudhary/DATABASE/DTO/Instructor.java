@@ -5,14 +5,13 @@ public class Instructor {
     //AN INSTRUCTOR  WILL HAVE ID, NAME, EMAIL
 
     private int INSTRUCTOR_ID;
-    private String INSTRUCTOR_FIRSTNAME;
-    private String INSTRUCTOR_LASTNAME;
+    private String INSTRUCTOR_NAME;
+
     private String INSTRUCTOR_EMAIL;
 
     public Instructor(int INSTRUCTOR_ID, String INSTRUCTOR_NAME, String INSTRUCTOR_EMAIL) {
         this.INSTRUCTOR_ID = INSTRUCTOR_ID;
-        this.INSTRUCTOR_FIRSTNAME = INSTRUCTOR_FIRSTNAME;
-        this.INSTRUCTOR_LASTNAME = INSTRUCTOR_LASTNAME;
+        this.INSTRUCTOR_NAME = INSTRUCTOR_NAME;
         this.INSTRUCTOR_EMAIL = INSTRUCTOR_EMAIL;
     }
 
@@ -24,20 +23,12 @@ public class Instructor {
         this.INSTRUCTOR_ID = INSTRUCTOR_ID;
     }
 
-    public String getINSTRUCTOR_FIRSTNAME() {
-        return INSTRUCTOR_FIRSTNAME;
+    public String getINSTRUCTOR_NAME() {
+        return INSTRUCTOR_NAME;
     }
 
-    public void setINSTRUCTOR_FIRSTNAME(String INSTRUCTOR_FIRSTNAME) {
-        this.INSTRUCTOR_FIRSTNAME = INSTRUCTOR_FIRSTNAME;
-    }
-
-    public String getINSTRUCTOR_LASTNAME() {
-        return INSTRUCTOR_LASTNAME;
-    }
-
-    public void setINSTRUCTOR_LASTNAME(String INSTRUCTOR_LASTNAME) {
-        this.INSTRUCTOR_LASTNAME = INSTRUCTOR_LASTNAME;
+    public void setINSTRUCTOR_NAME(String INSTRUCTOR_NAME) {
+        this.INSTRUCTOR_NAME = INSTRUCTOR_NAME;
     }
 
     public String getINSTRUCTOR_EMAIL() {
@@ -52,9 +43,12 @@ public class Instructor {
     public String toString() {
         return "Instructor{" +
                 "INSTRUCTOR_ID=" + INSTRUCTOR_ID +
-                ", INSTRUCTOR_FIRSTNAME='" + INSTRUCTOR_FIRSTNAME + '\'' +
-                ", INSTRUCTOR_LASTNAME='" + INSTRUCTOR_LASTNAME + '\'' +
+                ", INSTRUCTOR_NAME='" + INSTRUCTOR_NAME + '\'' +
                 ", INSTRUCTOR_EMAIL='" + INSTRUCTOR_EMAIL + '\'' +
                 '}';
+    }
+
+    public void printIntructor() {
+        System.out.printf("%-15s%-25s%-45s\n", INSTRUCTOR_ID, INSTRUCTOR_NAME,INSTRUCTOR_EMAIL);
     }
 }

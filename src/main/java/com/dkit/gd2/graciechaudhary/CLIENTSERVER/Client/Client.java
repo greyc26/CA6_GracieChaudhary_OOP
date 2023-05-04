@@ -90,9 +90,19 @@ public class Client
                         IMenu courseMenu = AllMenuFactory.getMenu(menu);
                         command = courseMenu.getChoice(keyboard);
 
-                        if(command.equals(MultithreadedServerDetails.CALL_QUIT)){
+                        if(command.equals(MultithreadedServerDetails.RETURN)){
                         continue;
+                         }
+
                     }
+                    else if(command.equals(MultithreadedServerDetails.INSTRUCTOR_MENU)){
+
+                        IMenu courseMenu = AllMenuFactory.getMenu(menu);
+                        command = courseMenu.getChoice(keyboard);
+
+                        if(command.equals(MultithreadedServerDetails.RETURN)){
+                            continue;
+                        }
                 }
                 Command c = commandFactory.getCommand(command);
                 command = c.generateRequest(keyboard);

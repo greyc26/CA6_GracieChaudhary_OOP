@@ -1,5 +1,6 @@
 package com.dkit.gd2.graciechaudhary.DATABASE.Menus;
 
+import com.dkit.gd2.graciechaudhary.Core.Utility;
 import com.dkit.gd2.graciechaudhary.DATABASE.DAO.Course.MySqlCourseDAO;
 import com.dkit.gd2.graciechaudhary.DATABASE.DTO.Course;
 import com.dkit.gd2.graciechaudhary.Enum.Colours;
@@ -67,10 +68,11 @@ public class CourseMenu {
 
     private  void feature1(MySqlCourseDAO courseDao) {
         try{
-            System.out.println(Colours.MAGENTA_BOLD_BRIGHT+"\nAll courses: "+Colours.RESET+Colours.WHITE_BOLD_BRIGHT);
+            System.out.println(Colours.MAGENTA_BOLD_BRIGHT+"\nAll courses: "+Colours.RESET+Colours.YELLOW_BOLD_BRIGHT);
             List<Course> allCourses = courseDao.findAllCourses();
+            System.out.println(Utility.COURSE_HEADER+Colours.RESET+Colours.WHITE_BOLD_BRIGHT);
             for(Course course : allCourses){
-                System.out.println(course);
+                course.printCourse();
             }
             System.out.println(Colours.RESET);
         }
@@ -86,8 +88,9 @@ public class CourseMenu {
                 int courseId = keyboard.nextInt();
                 Course course = courseDao.findCourseById(courseId);
                 if (course != null) {
-                    System.out.println(Colours.MAGENTA_BOLD_BRIGHT + "\nCourse found: " + Colours.RESET + Colours.WHITE_BOLD_BRIGHT);
-                    System.out.println(course);
+                    System.out.println(Colours.MAGENTA_BOLD_BRIGHT + "\nCourse found: " + Colours.RESET + Colours.YELLOW_BOLD_BRIGHT);
+                    System.out.println(Utility.COURSE_HEADER + Colours.RESET + Colours.WHITE_BOLD_BRIGHT);
+                    course.printCourse();
                     System.out.println(Colours.RESET);
                 } else {
                     System.out.println(Colours.RED_BOLD_BRIGHT + "Course not found" + Colours.RESET);
@@ -113,7 +116,8 @@ public class CourseMenu {
             int maxEnrollemtNumber = keyboard.nextInt();
             List<Course> allCourses = courseDao.findCourseUsingFilter(maxEnrollemtNumber);
             System.out.println(Colours.MAGENTA_BOLD_BRIGHT+"\nCourses with enrollment less than "+maxEnrollemtNumber+Colours.RESET);
-            System.out.println(Colours.WHITE_BOLD_BRIGHT);
+            System.out.println(Colours.YELLOW_BOLD_BRIGHT);
+            System.out.println(Utility.COURSE_HEADER+Colours.RESET+Colours.WHITE_BOLD_BRIGHT);
             for(Course course : allCourses){
                 System.out.println(course);
             }
@@ -187,12 +191,17 @@ public class CourseMenu {
             return false;
         }
 
-        List<Course> allCourses = courseDao.findAllCourses();
-        for(Course c : allCourses){
-            if(c.getCOURSE_ID() == id){
-                System.out.println(Colours.RED_BOLD_BRIGHT+"\nCourse id already exists"+Colours.RESET);
-                return false;
+        try{
+            List<Course> allCourses = courseDao.findAllCourses();
+            for(Course c : allCourses){
+                if(c.getCOURSE_ID() == id){
+                    System.out.println(Colours.RED_BOLD_BRIGHT+"\nCourse id already exists"+Colours.RESET);
+                    return false;
+                }
             }
+        }
+        catch(DAOException e){
+            System.out.println(Colours.RED_BOLD_BRIGHT+"Error "+e.getMessage()+Colours.RESET);
         }
         return true;
     }
@@ -321,7 +330,14 @@ public class CourseMenu {
     private  void feature6(MySqlCourseDAO courseDao) {
         try{
             System.out.println(Colours.MAGENTA_BOLD_BRIGHT+"\nAll courses as JSON: "+Colours.RESET);
-            System.out.println(Colours.WHITE_BOLD_BRIGHT+courseDao.findAllCoursesAsJSON()+Colours.RESET);
+            System.out.println(Colours.WHITE_BOLD_BRIGHT);
+            String json = courseDao.findAllCoursesAsJSON();
+
+            String[] lines = json.split("\n");
+            for(String line : lines){
+                System.out.println(line);
+            }
+            System.out.println(Colours.RESET);
         }
         catch(DAOException e){
             System.out.println(Colours.RED_BOLD_BRIGHT+"Error"+e.getMessage()+Colours.RESET);

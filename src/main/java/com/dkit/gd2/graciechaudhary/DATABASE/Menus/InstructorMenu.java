@@ -1,5 +1,6 @@
 package com.dkit.gd2.graciechaudhary.DATABASE.Menus;
 
+import com.dkit.gd2.graciechaudhary.Core.Utility;
 import com.dkit.gd2.graciechaudhary.DATABASE.DAO.Course.MySqlCourseDAO;
 import com.dkit.gd2.graciechaudhary.DATABASE.DAO.Instructor.MySqlInstructorDAO;
 import com.dkit.gd2.graciechaudhary.DATABASE.DTO.Course;
@@ -58,9 +59,10 @@ public class InstructorMenu {
         try{
             System.out.println("\nAll instructors: ");
             List<Instructor> allInstructors = instructorDAO.findAllInstructors();
-            System.out.println(Colours.WHITE_BOLD_BRIGHT);
+            System.out.println(Colours.YELLOW_BOLD_BRIGHT);
+            System.out.println(Utility.INSTRUCTOR_HEADER+Colours.RESET+Colours.WHITE_BOLD_BRIGHT);
             for(Instructor instructor: allInstructors){
-                System.out.println(instructor);
+                instructor.printIntructor();
             }
             System.out.println(Colours.RESET);
         }
@@ -75,8 +77,9 @@ public class InstructorMenu {
             int instructorId = keyboard.nextInt();
             Instructor instructor = instructorDAO.findInstructorById(instructorId);
             if(instructor!=null){
-                System.out.println(Colours.MAGENTA_BOLD_BRIGHT+"\nInstructor found: "+Colours.RESET+Colours.WHITE_BOLD_BRIGHT);
-                System.out.println(instructor);
+                System.out.println(Colours.MAGENTA_BOLD_BRIGHT+"\nInstructor found: "+Colours.RESET+Colours.YELLOW_BOLD_BRIGHT);
+                System.out.println(Utility.INSTRUCTOR_HEADER+Colours.RESET+Colours.WHITE_BOLD_BRIGHT);
+                instructor.printIntructor();
                 System.out.println(Colours.RESET);
             }
             else{

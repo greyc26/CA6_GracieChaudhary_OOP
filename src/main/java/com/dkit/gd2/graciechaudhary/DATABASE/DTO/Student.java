@@ -7,15 +7,13 @@ public class Student {
     //for this dto, student has an id, a name, email and dob
 
     private int STUDENT_ID;
-    private String STUDENT_FIRSTNAME;
-    public String STUDENT_LASTNAME;
+    private String STUDENT_NAME;
     private String STUDENT_EMAIL;
     private Date STUDENT_DOB;
 
-    public Student(int STUDENT_ID, String STUDENT_FIRSTNAME,String STUDENT_LASTNAME, String STUDENT_EMAIL, Date STUDENT_DOB) {
+    public Student(int STUDENT_ID, String STUDENT_NAME, String STUDENT_EMAIL, Date STUDENT_DOB) {
         this.STUDENT_ID = STUDENT_ID;
-        this.STUDENT_FIRSTNAME = STUDENT_FIRSTNAME;
-        this.STUDENT_LASTNAME = STUDENT_LASTNAME;
+        this.STUDENT_NAME = STUDENT_NAME;
         this.STUDENT_EMAIL = STUDENT_EMAIL;
         this.STUDENT_DOB = STUDENT_DOB;
     }
@@ -28,20 +26,12 @@ public class Student {
         this.STUDENT_ID = STUDENT_ID;
     }
 
-    public String getSTUDENT_FIRSTNAME() {
-        return STUDENT_FIRSTNAME;
+    public String getSTUDENT_NAME() {
+        return STUDENT_NAME;
     }
 
-    public void setSTUDENT_FIRSTNAME(String STUDENT_FIRSTNAME) {
-        this.STUDENT_FIRSTNAME = STUDENT_FIRSTNAME;
-    }
-
-    public String getSTUDENT_LASTNAME() {
-        return STUDENT_LASTNAME;
-    }
-
-    public void setSTUDENT_LASTNAME(String STUDENT_LASTNAME) {
-        this.STUDENT_LASTNAME = STUDENT_LASTNAME;
+    public void setSTUDENT_NAME(String STUDENT_NAME) {
+        this.STUDENT_NAME = STUDENT_NAME;
     }
 
     public String getSTUDENT_EMAIL() {
@@ -62,12 +52,15 @@ public class Student {
 
     @Override
     public String toString() {
-        return "STUDENT{" +
+        return "Student{" +
                 "STUDENT_ID=" + STUDENT_ID +
-                ", STUDENT_FIRSTNAME='" + STUDENT_FIRSTNAME + '\'' +
-                ", STUDENT_LASTNAME='" + STUDENT_LASTNAME + '\'' +
+                ", STUDENT_NAME='" + STUDENT_NAME + '\'' +
                 ", STUDENT_EMAIL='" + STUDENT_EMAIL + '\'' +
                 ", STUDENT_DOB=" + STUDENT_DOB +
                 '}';
+    }
+
+    public void printStudent(){
+        System.out.printf("%-6s%-40s%-45s%-15s\n", STUDENT_ID, STUDENT_NAME, STUDENT_EMAIL, STUDENT_DOB);
     }
 }

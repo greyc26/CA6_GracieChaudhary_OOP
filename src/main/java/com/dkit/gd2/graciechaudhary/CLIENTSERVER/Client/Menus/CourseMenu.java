@@ -31,7 +31,7 @@ public class CourseMenu implements IMenu{
             switch(choice){
                 case 0:
                     loop = false;
-                    output = MultithreadedServerDetails.CALL_QUIT;
+                    output = MultithreadedServerDetails.RETURN;
                     break;
                 case 1:
                     output = MultithreadedServerDetails.DISPLAY_ALLCOURSES;

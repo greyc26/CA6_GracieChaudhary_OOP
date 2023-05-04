@@ -155,7 +155,7 @@ public class MySqlCourseDAO extends mySqlDAO implements CourseDaoInterface {
             }
 
             catch (Exception e) {
-                throw new DAOException(Colours.RED_BOLD_BRIGHT+"findAllCourses() " + e.getMessage()+Colours.RESET);
+                throw new DAOException(Colours.RED_BOLD_BRIGHT+"deleteCourseById()" + e.getMessage()+Colours.RESET);
             }
 
             finally {
@@ -271,14 +271,16 @@ public class MySqlCourseDAO extends mySqlDAO implements CourseDaoInterface {
     public String findAllCoursesAsJSON() throws DAOException {
         List<Course> allCourses = findAllCourses();
         Gson gson = new Gson();
-        return gson.toJson(allCourses);
+        String json = gson.toJson(allCourses);
+        return json;
     }
 
     @Override
     public String findCoursesByIdAsJSON(int id) throws DAOException {
         Course course = findCourseById(id);
         Gson gson = new Gson();
-        return gson.toJson(course);
+        String json = gson.toJson(course);
+        return json;
     }
 }
 

@@ -11,6 +11,7 @@ public class MultithreadedServerDetails {
 
     //for all menus
     public static final String EXIT = "EXIT";
+    public static final String RETURN = "RETURN";
 
     //course menu
     public static final String COURSE_MENU = "COURSE";

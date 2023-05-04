@@ -16,7 +16,8 @@ import static java.lang.String.format;
 
 public class Utility {
     public static final String COURSE_HEADER = format("%-20s%-40s%-20s%-10s\n", "COURSE_ID", "COURSE_NAME", "INSTRUCTOR_ID", "MAX_ENROLLEMENT_NUMBER");
-    public static final String INSTRUCTOR_HEADER = format("%-6s%-35s%-45s\n", "INSTRUCTOR_ID", "INSTRUCTOR_NAME", "INSTRUCTOR_EMAIL");
+    public static final String INSTRUCTOR_HEADER = format("%-15s%-25s%-45s\n", "INSTRUCTOR_ID", "INSTRUCTOR_NAME", "INSTRUCTOR_EMAIL");
+    public static final String STUDENT_HEADER = format("%-6s%-40s%-40s%-15s\n", "STUDENT_ID", "STUDENT_NAME", "STUDENT_EMAIL", "STUDENT_DOB");
 
     public static int getIntInput(Scanner keyboard) {
         int choice = -1;
@@ -39,79 +40,79 @@ public class Utility {
         return choice;
     }
 
-
-    public static int getIdInput(Scanner keyboard) {
-        int choice = -1;
-
-        while (choice < 1){
-            try{
-                if(keyboard.hasNextLine()) {
-                    choice = keyboard.nextInt();
-                    if (choice < 1)
-                        throw new Exception();
-                }
-                else{
-                    System.out.println(Colours.RED_BOLD_BRIGHT + "Invalid input, enter a valid ID." + Colours.RESET);
-                    System.out.print(Colours.BLUE_BOLD_BRIGHT + "Enter a valid ID: " + Colours.RESET);
-                    choice = -1;
-                    keyboard.nextLine();
-                }
-            }
-            catch (Exception e){
-                System.out.println(Colours.RED_BOLD_BRIGHT + "Invalid input, enter a valid ID." + Colours.RESET);
-                System.out.print(Colours.BLUE_BOLD_BRIGHT + "Enter a valid ID: " + Colours.RESET);
-                choice = -1;
-                keyboard.nextLine();
-            }
-        }
-        return choice;
-    }
-
-
-    public static String getNameInput(Scanner keyboard) {
-        String name = "";
-        keyboard.nextLine();
-        while (name.length() < 3 || name.length() > 45){
-            try{
-                name = keyboard.nextLine();
-                if (name.length() < 2)
-                    throw new Exception();
-            }
-            catch (Exception e){
-                System.out.println(Colours.RED_BOLD_BRIGHT + "Invalid input, enter a valid name." + Colours.RESET);
-                System.out.print(Colours.BLUE_BOLD_BRIGHT + "Enter a valid name: " + Colours.RESET);
-                name = "";
-            }
-        }
-        return name;
-    }
-
-
-    public static int getInstructorIdInput(Scanner keyboard) {
-        int instructorId = -1;
-        while (instructorId < 0 || instructorId > 11){
-            try{
-                if(keyboard.hasNextLine()) {
-                    instructorId = keyboard.nextInt();
-                    if (instructorId < 0)
-                        throw new Exception();
-                }
-                else{
-                    System.out.println(Colours.RED_BOLD_BRIGHT + "Invalid input, enter a valid instructor ID." + Colours.RESET);
-                    System.out.print(Colours.BLUE_BOLD_BRIGHT +"Enter a valid instructor ID: " + Colours.RESET);
-                    keyboard.nextLine();
-                    instructorId = -1;
-                }
-            }
-            catch (Exception e){
-                System.out.println(Colours.RED_BOLD_BRIGHT + "Invalid input, enter a valid price." + Colours.RESET);
-                System.out.print(Colours.BLUE_BOLD_BRIGHT +"Enter a valid price: " + Colours.RESET);
-                keyboard.nextLine();
-                instructorId = -1;
-            }
-        }
-        return instructorId;
-    }
+//
+//    public static int getIdInput(Scanner keyboard) {
+//        int choice = -1;
+//
+//        while (choice < 1){
+//            try{
+//                if(keyboard.hasNextLine()) {
+//                    choice = keyboard.nextInt();
+//                    if (choice < 1)
+//                        throw new Exception();
+//                }
+//                else{
+//                    System.out.println(Colours.RED_BOLD_BRIGHT + "Invalid input, enter a valid ID." + Colours.RESET);
+//                    System.out.print(Colours.BLUE_BOLD_BRIGHT + "Enter a valid ID: " + Colours.RESET);
+//                    choice = -1;
+//                    keyboard.nextLine();
+//                }
+//            }
+//            catch (Exception e){
+//                System.out.println(Colours.RED_BOLD_BRIGHT + "Invalid input, enter a valid ID." + Colours.RESET);
+//                System.out.print(Colours.BLUE_BOLD_BRIGHT + "Enter a valid ID: " + Colours.RESET);
+//                choice = -1;
+//                keyboard.nextLine();
+//            }
+//        }
+//        return choice;
+//    }
+//
+//
+//    public static String getNameInput(Scanner keyboard) {
+//        String name = "";
+//        keyboard.nextLine();
+//        while (name.length() < 3 || name.length() > 45){
+//            try{
+//                name = keyboard.nextLine();
+//                if (name.length() < 2)
+//                    throw new Exception();
+//            }
+//            catch (Exception e){
+//                System.out.println(Colours.RED_BOLD_BRIGHT + "Invalid input, enter a valid name." + Colours.RESET);
+//                System.out.print(Colours.BLUE_BOLD_BRIGHT + "Enter a valid name: " + Colours.RESET);
+//                name = "";
+//            }
+//        }
+//        return name;
+//    }
+//
+//
+//    public static int getInstructorIdInput(Scanner keyboard) {
+//        int instructorId = -1;
+//        while (instructorId < 0 || instructorId > 11){
+//            try{
+//                if(keyboard.hasNextLine()) {
+//                    instructorId = keyboard.nextInt();
+//                    if (instructorId < 0)
+//                        throw new Exception();
+//                }
+//                else{
+//                    System.out.println(Colours.RED_BOLD_BRIGHT + "Invalid input, enter a valid instructor ID." + Colours.RESET);
+//                    System.out.print(Colours.BLUE_BOLD_BRIGHT +"Enter a valid instructor ID: " + Colours.RESET);
+//                    keyboard.nextLine();
+//                    instructorId = -1;
+//                }
+//            }
+//            catch (Exception e){
+//                System.out.println(Colours.RED_BOLD_BRIGHT + "Invalid input, enter a valid price." + Colours.RESET);
+//                System.out.print(Colours.BLUE_BOLD_BRIGHT +"Enter a valid price: " + Colours.RESET);
+//                keyboard.nextLine();
+//                instructorId = -1;
+//            }
+//        }
+//        return instructorId;
+//    }
 
 
 
@@ -131,12 +132,16 @@ public class Utility {
         return gson.fromJson(json, listType);
     }
 
-
-
-
     public static Instructor getInstructorFromJSON(String json){
         Gson gson = new Gson();
         return gson.fromJson(json, Instructor.class);
+    }
+
+
+    public static List<Instructor> getInstructorsFromJSON(String json){
+        Gson gson = new Gson();
+        Type listType = new com.google.gson.reflect.TypeToken<List<Instructor>>(){}.getType();
+        return gson.fromJson(json, listType);
     }
 
     public static String getJSONFromInstructor(Instructor instructor){
@@ -263,34 +268,6 @@ public class Utility {
         return null;
 }
 
-
-
-//    public static List<Item> getItemsFromJson(String json){
-//        Gson gson = new Gson();
-//        Type listType = new com.google.gson.reflect.TypeToken<List<Item>>(){}.getType();
-//        return gson.fromJson(json, listType);
-//    }
-//
-//    public static List<DetailedBuild> getDetailedBuildsFromJson(String json){
-//        Gson gson = new Gson();
-//        Type listType = new com.google.gson.reflect.TypeToken<List<DetailedBuild>>(){}.getType();
-//        return gson.fromJson(json, listType);
-//    }
-//
-//    public static String getJsonFromBuild(Build build){
-//        Gson gson = new Gson();
-//        return gson.toJson(build);
-//    }
-//
-//    public static Build getBuildFromJson(String json){
-//        Gson gson = new Gson();
-//        return gson.fromJson(json, Build.class);
-//    }
-
-    public static String getJsonFromList(List<?> list){
-        Gson gson = new Gson();
-        return gson.toJson(list);
-    }
 
 
 

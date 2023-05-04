@@ -1,6 +1,7 @@
 package com.dkit.gd2.graciechaudhary.DATABASE.Menus;
 
 import com.dkit.gd2.graciechaudhary.Enum.Colours;
+import com.dkit.gd2.graciechaudhary.Exceptions.DAOException;
 
 import java.util.Scanner;
 
@@ -8,11 +9,12 @@ public class MainMenu {
 
     private static Scanner keyboard = new Scanner(System.in);
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, DAOException {
 
         CourseMenu courseMenu = new CourseMenu();
         InstructorMenu instructorMenu = new InstructorMenu();
-        callMenu(courseMenu, instructorMenu);
+        StudentMenu studentMenu = new StudentMenu();
+        callMenu(courseMenu, instructorMenu, studentMenu);
 
     }
 
@@ -25,7 +27,7 @@ public class MainMenu {
                 System.out.println(Colours.BLUE_BOLD_BRIGHT+ "Enter choice: "+Colours.RESET);
                 if(keyboard.hasNextInt()){
                     choice = keyboard.nextInt();
-                    if(choice > -1 && choice <7){
+                    if(choice > -1 && choice <4){
                         valid = true;
                     }
                     else{
@@ -50,13 +52,11 @@ public class MainMenu {
         System.out.println(Colours.MAGENTA+"0. Exit");
         System.out.println("1. Course Menu");
         System.out.println("2. Student Menu");
-        System.out.println("3. Instructor Menu");
-        System.out.println("4. Enrollment Menu");
-        System.out.println("5. Assignment Menu");
-        System.out.println("6. Submission Menu"+Colours.RESET);
+        System.out.println("3. Instructor Menu"+Colours.RESET);
+
 
     }
-    private static void callMenu(CourseMenu courseMenu, InstructorMenu instructorMenu) throws InterruptedException {
+    private static void callMenu(CourseMenu courseMenu, InstructorMenu instructorMenu,StudentMenu studentMenu) throws InterruptedException, DAOException {
         boolean loop = true;
         while(loop){
             printMenu();
@@ -66,22 +66,10 @@ public class MainMenu {
                     courseMenu.callMenu();
                     break;
                 case 2:
-
+                    studentMenu.callMenu();
                     break;
                 case 3:
                     instructorMenu.callMenu();
-                    break;
-                case 4:
-                    //courseMenu.feature4();
-                    break;
-                case 5:
-                    //courseMenu.feature5();
-                    break;
-                case 6:
-                    //courseMenu.feature6();
-                    break;
-                case 7:
-                    //courseMenu.feature7();
                     break;
                 case 0:
                     System.out.println(Colours.RED_BOLD_BRIGHT+"Exiting..."+Colours.RESET);
